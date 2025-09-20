@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+    <body>
+    <header>
+        <h1 class="titulo">Mi Amor, Mi Vida <span>Todo para ti</span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#inicio">Inicio</a>
+            <a href="#estrella-brillante">Mi Estrella Brillante</a>
+            <a href="#momentos">Nuestros Momentos</a>
+            <a href="#futuro">Nuestro Futuro</a>
+        </nav>
+    </div>
+
+    <section class="hero" id="inicio">
+        <div class="contenedor-hero">
+            <h2>¡Hola, mi amor!</h2>
+            <div class="ubicacion">
+                <p>Mérida, Yucatán</p>
+                <a class="boton-mostrar-contador" href="#">Dime Cuánto Llevamos Juntos</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <main class="sombra">
+        <div id="contador-contenedor" class="oculto">
+            <h2 class="fecha-inicio">Desde: --/--/----</h2>
+            <p id="contador-tiempo" class="mensaje-contador"></p>
+        </div>
+
+        <section class="servicio" id="estrella-brillante">
+            <h3>Mi Estrella Brillante ✨</h3>
+            <div class="iconos">
+                <img src="tu_foto_con_ella.jpg" alt="Una foto de los dos juntos" class="imagen-redonda">
+            </div>
+            <p>Aquí puedes escribir una descripción de por qué es tu estrella brillante, las cosas que más te gustan de ella, su sonrisa, su personalidad, etc. Personaliza este texto para que sea único.</p>
+        </section>
+
+        <section class="servicio" id="momentos">
+            <h3>Nuestros Momentos Inolvidables 📸</h3>
+            <div class="iconos">
+                <img src="foto_momento_1.jpg" alt="Primer momento juntos" class="imagen-redonda">
+                <img src="foto_momento_2.jpg" alt="Segundo momento juntos" class="imagen-redonda">
+            </div>
+            <p>En este espacio, puedes añadir más fotos de ustedes dos y describir los momentos que las hicieron especiales. Por ejemplo, "El día que fuimos a... y reímos hasta que nos dolió el estómago".</p>
+        </section>
+
+        <section class="servicio" id="futuro">
+            <h3>Soñando con el Futuro 💖</h3>
+            <div class="iconos">
+                <img src="foto_simbolica_futuro.jpg" alt="Una foto que simbolice su futuro" class="imagen-redonda">
+            </div>
+            <p>Aquí puedes escribir sobre el futuro que sueñas con ella, cómo visualizas su vida juntos y lo emocionado que estás por el reencuentro.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Siempre tuyo, Julio César</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
