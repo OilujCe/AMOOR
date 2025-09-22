@@ -90,11 +90,36 @@ header {
 .contenedor-hero {
     text-align: center;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-image: url('image/peque.jpg'); /* Agregamos tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     border-radius: 1rem;
+    position: relative; /* Necesario para la capa semitransparente */
+    color: white; /* Cambiamos el color del texto para que se lea sobre la imagen */
 }
 
-.ubicacion p {
+.contenedor-hero::before { /* Esto crea una capa semitransparente sobre la imagen */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Capa oscura semitransparente */
+    border-radius: 1rem; /* Mismo borde que el contenedor */
+    z-index: 1; /* Asegura que esté sobre la imagen pero debajo del texto */
+}
+
+.contenedor-hero h2,
+.contenedor-hero p,
+.contenedor-hero .boton-mostrar-contador { /* Asegura que el texto y el botón estén por encima de la capa oscura */
+    position: relative;
+    z-index: 2;
+    color: white; /* Asegura que el texto sea blanco para que resalte */
+}
+
+.frase p {
     font-size: 1.8rem;
 }
 
@@ -201,6 +226,23 @@ h2, h3 {
         font-size: 2rem;
     }
     .imagen-redonda {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.video-futuro {
+    width: 200px; /* Mismo tamaño que las imágenes */
+    height: 200px;
+    object-fit: cover; /* Asegura que el video cubra el área sin distorsionarse */
+    border-radius: 50%; /* Lo hace redondo */
+    border: 5px solid var(--amarillo); /* Borde amarillo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Ajuste para móviles */
+@media (max-width: 767px) {
+    .video-futuro {
         width: 150px;
         height: 150px;
     }

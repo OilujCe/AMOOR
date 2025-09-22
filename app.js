@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Definir la fecha de inicio
-    const fechaInicio = new Date('2024-03-25T00:00:00'); // ¡Actualiza tu fecha aquí!
-
+    const fechaInicio = new Date('2025-08-30T00:00:00'); 
     // 2. Obtener los elementos HTML
     const contadorElemento = document.getElementById('contador-tiempo');
     const fechaInicioElemento = document.querySelector('.fecha-inicio');
